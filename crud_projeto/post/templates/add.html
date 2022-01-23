@@ -28,25 +28,29 @@
                         <table class="table table-bordered">
                             <tr>
                                 <th>Titulo<span style="color: red;">*</span></th>
-                                <td> <input type="text" class="form-control" name="title" placeholder="Titulo da tarefa" required> </td>
+                                <td> <input type="text" class="form-control" name="title" placeholder="Titulo da tarefa" required maxlength="20"> </td>
                             </tr>
                             <tr>
                                 <th>Tarefa<span style="color: red;">*</span></th>
-                                <td> <textarea class="form-control" name="detail" placeholder="Ex: Corrigir o bug no crud do sistema" required></textarea> </td>
+                                <td> 
+                                    <textarea class="form-control" id="text_area" name="detail" placeholder="Ex: Corrigir o bug no crud do sistema" required maxlength="255"></textarea>
+                                    <span><span class="counter">0</span>/256</span>
+                                    <input type="button" class="btn btn-primary" id="limpar" style="margin-top: 5px; float: right; width: 90px;" value="Limpar">
+                                 </td>
                             </tr>
                             <tr>
                                 <th>Nome do encarregado<span style="color: red;">*</span></th>
-                                <td> <input type="text" class="form-control" name="name" placeholder="Ex: João pipa de bambú" required> </td>
+                                <td> <input type="text" class="form-control" name="name" placeholder="Ex: João pipa de bambú" required maxlength="30"> </td>
                             </tr>
                             <tr>
                                 <th>Status<span style="color: red;">*</span></th>
                                 <td>
-                                    <input type="text" class="form-control" name="status" placeholder="Ex: Fazendo" value="{{post.status}}" required>
+                                    <input type="text" class="form-control" name="status" placeholder="Ex: Fazendo" value="{{post.status}}" required maxlength="7"> 
                                 </td>
                             </tr>
                             <tr>
                                 <th>Data<span style="color: red;">*</span></th>
-                                <td> <input type="text" class="form-control" name="data" placeholder="ano-mês-dia" required> </td>
+                                <td> <input type="text" class="form-control" name="data" placeholder="ano-mês-dia" required maxlength="10"> </td> 
                             </tr>
                             <tr>
                                 <td colspan="2" align="right"> 
@@ -60,5 +64,6 @@
             </div>
         </div>
 
+        <script src="../static/js_project/actions.js"></script>
     </body>
 </html>
