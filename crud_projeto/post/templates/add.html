@@ -27,26 +27,26 @@
                         {% csrf_token %}
                         <table class="table table-bordered">
                             <tr>
-                                <th>Titulo</th>
-                                <td> <input type="text" class="form-control" name="title" placeholder="Titulo da tarefa"> </td>
+                                <th>Titulo<span style="color: red;">*</span></th>
+                                <td> <input type="text" class="form-control" name="title" placeholder="Titulo da tarefa" required> </td>
                             </tr>
                             <tr>
-                                <th>Tarefa</th>
-                                <td> <textarea class="form-control" name="detail" placeholder="Ex: Corrigir o bug no crud do sistema"></textarea> </td>
+                                <th>Tarefa<span style="color: red;">*</span></th>
+                                <td> <textarea class="form-control" name="detail" placeholder="Ex: Corrigir o bug no crud do sistema" required></textarea> </td>
                             </tr>
                             <tr>
-                                <th>Nome do encarregado</th>
-                                <td> <input type="text" class="form-control" name="name" placeholder="Ex: João pipa de bambú"> </td>
+                                <th>Nome do encarregado<span style="color: red;">*</span></th>
+                                <td> <input type="text" class="form-control" name="name" placeholder="Ex: João pipa de bambú" required> </td>
                             </tr>
                             <tr>
-                                <th>Status</th>
+                                <th>Status<span style="color: red;">*</span></th>
                                 <td>
-                                    <input type="text" class="form-control" name="status" placeholder="Ex: Fazendo" value="{{post.status}}">
+                                    <input type="text" class="form-control" name="status" placeholder="Ex: Fazendo" value="{{post.status}}" required>
                                 </td>
                             </tr>
                             <tr>
-                                <th>Data limite</th>
-                                <td> <input type="text" class="form-control" name="data" placeholder="ano-mês-dia"> </td>
+                                <th>Data<span style="color: red;">*</span></th>
+                                <td> <input type="text" class="form-control" name="data" placeholder="ano-mês-dia" required> </td>
                             </tr>
                             <tr>
                                 <td colspan="2" align="right"> 
