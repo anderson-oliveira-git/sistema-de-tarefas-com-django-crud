@@ -5,9 +5,8 @@ tela de inicio do sistema
 tela de adicionar tarefa
 ![add](https://user-images.githubusercontent.com/6682086/150697519-ed6a2db4-21d2-459e-b134-46d9bd1de9da.png)
 
-
 tela de atualizar tarefa
-![att](https://user-images.githubusercontent.com/6682086/150659355-f62529e7-e20e-470e-921f-18c705f07eb2.png)
+![att](https://user-images.githubusercontent.com/6682086/150697573-80b27bc0-687f-468b-8b10-87c8702d9979.png)
 
 
 
