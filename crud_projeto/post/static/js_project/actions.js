@@ -2,7 +2,7 @@ const counter = document.querySelector('.counter');
 const text_area = document.querySelector('#text_area');
 const btn_limpar = document.querySelector('#limpar');
 
-text_area.addEventListener('input', function(event){
+text_area.addEventListener('input', (event) => {
     let qtd_letras = text_area.value.toString();
 
     if (event.keyCode === 8) {
